@@ -14,15 +14,16 @@ def get_headlines():
     url = 'https://thehackernews.com'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    articles = soup.select('.body-post h2 a')[:10]
+    articles = soup.find_all('a', class_='story-link')[:10]
 
     headlines = []
     for article in articles:
-        title = article.text.strip()
-        link = article['href']
-        headlines.append(f'<li><a href="{link}">{title}</a></li>')
-    return '<ul>' + ''.join(headlines) + '</ul>'
-
+        title_tag = article.find('h2')
+        if title_tag:
+            title = title_tag.text.strip()
+            link = article['href']
+            headlines.append(f'<li><a href="{link}">{title}</a></li>')
+    
 # Send email
 def send_email(content):
     msg = MIMEMultipart('alternative')
