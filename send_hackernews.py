@@ -19,10 +19,15 @@ def get_headlines():
     headlines = []
     for article in articles:
         title_tag = article.find('h2')
-        if title_tag:
+        if title_tag and article.has_attr('href'):
             title = title_tag.text.strip()
             link = article['href']
             headlines.append(f'<li><a href="{link}">{title}</a></li>')
+
+    if headlines:
+        return '<ul>' + ''.join(headlines) + '</ul>'
+    else:
+        return '<p>No headlines found.</p>'
     
 # Send email
 def send_email(content):
