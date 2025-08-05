@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 
 # Gmail credentials
 GMAIL_USER = 'zeusyee1247@gmail.com'
-GMAIL_APP_PASSWORD = 'Arthur52425708$$@2307'
+GMAIL_APP_PASSWORD = 'gydy ihxl bcmp kisr'
 TO_EMAIL = 'zeusyee1247@gmail.com'
 
 # Scrape headlines
