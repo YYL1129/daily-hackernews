@@ -5,9 +5,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # Gmail credentials
-GMAIL_USER = 'zeusyee1247@gmail.com'
-GMAIL_APP_PASSWORD = 'gydy ihxl bcmp kisr'
-TO_EMAIL = 'zeusyee1247@gmail.com'
+GMAIL_USER = 'yourEmail'
+GMAIL_APP_PASSWORD = 'Password'
+TO_EMAIL = 'yourEmail'
 
 # Scrape headlines
 def get_headlines():
