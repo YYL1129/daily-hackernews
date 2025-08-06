@@ -65,3 +65,6 @@ If unsure, set the repo to private.
 You’ll receive an email like:
 Subject: Top 10 Headlines from The Hacker News
 Body: List of clickable headlines
+
+
+<img width="757" height="464" alt="image" src="https://github.com/user-attachments/assets/70b50cf6-85d0-46ea-b7b9-f4b63977d2f3" />
